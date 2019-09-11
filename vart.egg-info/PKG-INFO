@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: vart
+Version: 0.1.0
+Summary: Variational Art
+Home-page: https://github.com/NicoRenaud/vArt
+Author: ['Nicolas Renaud']
+Author-email: n.renaud@esciencecenter.nl
+License: Apache Software License 2.0
+Description: 
+        
+        
+Keywords: vart
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: intended audience :: science/research
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: doc
+Provides-Extra: dev
