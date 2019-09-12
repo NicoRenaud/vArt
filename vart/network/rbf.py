@@ -45,14 +45,17 @@ class RBF(nn.Module):
         self.kernel = kernel
 
         # get the standard deviations
-        self.sigma = nn.Parameter(sigma*torch.rand(self.centers.shape))
+        #self.sigma = nn.Parameter(sigma*torch.rand(self.centers.shape))
+        self.sigma = nn.Parameter(sigma*torch.ones(self.centers.shape))
         self.sigma.requires_grad = True
 
         # get the covariance matrix and its inverse
         self.invCov = self.invCovMat(self.sigma)
 
-        self.P = nn.Parameter(torch.randint(0,Pmax,size=(self.ncenter,)).float())
+        #self.P = nn.Parameter(torch.randint(0,Pmax,size=(self.ncenter,)).float())
+        self.P = nn.Parameter(torch.ones(self.ncenter).float())
         self.P.requires_grad = True
+        # self.P = 1
 
         # GET THE DENOMINATOR
         #self.detS = self.denom(self.sigma,self.input_features)
